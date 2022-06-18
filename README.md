@@ -1,1 +1,1 @@
-# http://MugDuck.github.io/Portfolio/Websites/Portfolio/index.html
+# http://MugDuck.github.io/Portfolio/Websites/Porfolio/index.html
