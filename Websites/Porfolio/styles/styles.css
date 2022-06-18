@@ -1,0 +1,130 @@
+
+
+
+/* Custom Variables */
+:root{
+    --navFontSize: 20px;
+    --containerSize: 50px;
+    --titleFontSize: 40px;
+    --navSelectBaseColor: rgb(0, 153, 255);
+    --navSelectHoverColor: White;
+    --navSelectBoxHoverSize: calc(var(--containerSize)+ 3vw);
+    --navSelectFontHoverSize: calc(var(--navFontSize) + 2vw);
+}
+
+
+
+/*Full-Body ------------------------------------------ */
+body {
+    
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr, 1fr, 1fr, 1fr;
+    background-image: url('../pictures/mestockphoto.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    /*border: 2px dashed blue;*/
+    background-color: lightgray;
+    
+}
+
+
+
+/*Name ---------------------------------------------- */ 
+h1 {
+    font-family: Calibri;
+    font-size: calc(var(--titleFontSize) + 2vw);
+    color: white;
+    text-align: center;
+    margin-top: 50px;
+    /*border:2px dashed white;*/
+    margin:auto;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    
+
+}
+.extraSpace{
+    margin: 300px;
+}
+.professionContainer{
+    display: block;
+    position: absolute;
+    right: 100;
+    top:100;
+}
+.profession{
+    font-size: calc(var(--titleFontSize) + 1vw) ;
+    color: lightgrey;
+    margin: 50px;
+    
+}
+
+
+
+/*Navigation Section -------------------------------- */
+.navContainer {
+    display: grid;
+    grid-template-columns: repeat(3, var(--containerSize));
+    grid-template-rows: calc(var(--containerSize) + 2vw);
+    justify-content: space-evenly;
+    justify-items: center;
+    align-content: space-evenly;
+    align-items: center;
+    /*border: 2px dashed red;*/
+    background: rgba(11, 14, 14, 0.438);
+    
+}
+ul{
+    list-style-type: none;
+    
+}
+li {
+    
+    font-family: Calibri;
+    height: calc(var(--containerSize)+ 1vw);
+    /*border: 2px dashed yellow;*/
+    justify-items: center;
+    background: rgba(18, 22, 22, .7);
+    margin: 50px;
+}
+.navProperties{
+    font-size: calc(var(--navFontSize) + 1vw);
+    margin-top: auto;
+    color: var(--navSelectBaseColor);
+    text-align: center;
+
+}
+
+
+/* Hover/ link properties*/
+
+.navHover:hover{
+    width: var(--navSelectBoxHoverSize);
+    color: var(--navSelectHoverColor);
+    font-size: var(--navSelectFontHoverSize);
+    
+}
+
+
+/*Social Media Icons*/
+.socialMediaContainer{
+    display: grid;
+    background-color: var(--navSelectBaseColor);
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    
+    justify-content: space-evenly;
+    justify-items: center;
+    align-content: space-evenly;
+    align-items: center;
+    margin:auto;
+    margin-bottom: 25px;
+    
+}
+.iconIMG{
+    width:75px;
+    /*border:2px dashed yellow;*/
+}
